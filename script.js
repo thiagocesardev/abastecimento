@@ -4,9 +4,7 @@ function calculate() {
     const result = document.querySelector(".compensa");
     const calcule = etanol / gasolina;
 
-    if (calcule >= 0.7) {
-        result.textContent = "Compensa abastecer com gasolina!";
-    } else {
-        result.textContent = "Compensa abastecer com Etanol!";
-    }
+ calcule >= 0.7 ? result.textContent = "Compensa abastecer com Gasolina!" :
+                  result.textContent = "Compensa abastecer com Etanol!";
+   
 }
